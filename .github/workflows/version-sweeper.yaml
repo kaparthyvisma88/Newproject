@@ -2,9 +2,12 @@ name: ".NET Version Sweeper"
 
 # Run monthly and allow manual runs
 on:
-  schedule:
+ push:
+    branches:
+      - main
+ schedule:
     - cron: "0 0 1 * *"   # first of every month at 00:00 UTC
-  workflow_dispatch:
+ workflow_dispatch:
     inputs:
       reason:
         description: "Why are you running the sweep?"
