@@ -1,0 +1,9 @@
+{
+  "ignore": [
+    "**/samples/**",
+    "**/tests/**",
+    "**/*ThisShouldNeverBeFlagged.csproj"
+  ],
+  "outOfSupportWithinDays": 90,
+  "actionType": "All"
+}
